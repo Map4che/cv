@@ -1,0 +1,115 @@
+.encabezado {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  background-image: linear-gradient(
+    to right,
+    rgba(7, 108, 175, 0.993),
+    rgba(01, 16, 26, 0.64)
+  );
+  border-radius: 1000px;
+  width: 90%;
+  margin: 20px auto;
+  height: 140px;
+}
+
+.logo-Map4che {
+  width: 120px;
+  filter: contrast(1000%);
+  margin-top: 20px;
+  transition: 0.8s;
+  animation: cambioLogo 2s ease-in-out infinite alternate;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes cambioLogo {
+  0% {
+    filter: contrast(1000%);
+  }
+  79% {
+    filter: contrast(1000%);
+  }
+  80% {
+    filter: contrast(1000%) invert(100%);
+  }
+  81% {
+    filter: contrast(1000%);
+  }
+  98% {
+    filter: contrast(1000%);
+  }
+  100% {
+    filter: contrast(1000%) invert(100%);
+  }
+}
+
+.nombre-encabezado {
+  display: flex;
+  font-size: 1.8rem;
+  width: 35%;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: 0.8s;
+  transform-origin: center bottom;
+
+  &:hover {
+    font-size: 2.2rem;
+  }
+}
+
+.animacion-nombre {
+  margin: -2rem;
+  font-size: 4rem;
+  font-weight: 900;
+  color: rgb(21, 255, 0);
+  animation: cambioColor 5s ease-in-out infinite alternate;
+}
+
+@keyframes cambioColor {
+  0% {
+    color: rgb(21, 255, 0);
+  }
+
+  50% {
+    color: rgb(255, 1, 1);
+  }
+
+  100% {
+  }
+}
+
+.nombre {
+  color: rgb(0, 236, 253);
+}
+
+.lista-encabezado {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.lista-encabezado__item {
+  list-style: none;
+  font-size: 2.4rem;
+  margin: 2rem;
+  transition: 0.6s;
+  transform-origin: center bottom;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.link-header {
+  color: white;
+  padding: 0.2rem;
+
+  &:hover {
+    color: red;
+    background-color: rgba(240, 255, 255, 0.123);
+    border-radius: 50px;
+  }
+}

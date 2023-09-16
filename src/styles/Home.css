@@ -1,0 +1,18 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.foto-inicio {
+  width: 200px;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  margin: 2rem auto 12rem;
+  z-index: 1;
+
+  &:hover {
+    filter: none;
+  }
+}

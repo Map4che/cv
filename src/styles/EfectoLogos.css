@@ -1,0 +1,142 @@
+.fotos-container {
+  position: absolute;
+  right: 50%;
+  display: flex;
+  width: 0%;
+  justify-content: space-evenly;
+  margin: 0 auto 2rem;
+}
+
+.enlace-red-social {
+  position: absolute;
+  top: -40px;
+  display: flex;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(220, 228, 228, 0.452);
+  border-radius: 4rem;
+}
+
+.img-red-social {
+  width: 10rem;
+  height: 8rem;
+  filter: grayscale(100%);
+  margin: 4rem auto;
+}
+
+#Linkedin {
+  background-color: rgba(255, 235, 205, 0.349);
+  border-radius: 1rem;
+  padding: 1rem;
+  position: absolute;
+  animation-duration: 2s;
+  animation: logosLi 1s ease;
+  top: 120px;
+  left: -400px;
+  transition: transform 0.6s;
+
+  &:hover {
+    background-color: rgba(240, 248, 255, 0.788);
+    filter: none;
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes logosLi {
+  0% {
+    top: -40px;
+    left: 0px;
+  }
+  100% {
+    top: 120px;
+    left: -400px;
+  }
+}
+
+#github {
+  background-color: rgba(255, 235, 205, 0.349);
+  border-radius: 1rem;
+  padding: 1rem;
+  position: absolute;
+  animation-duration: 2s;
+  animation: logosGi 1s ease;
+  top: 120px;
+  left: -150px;
+  transition: transform 0.6s;
+
+  &:hover {
+    background-color: rgba(240, 248, 255, 0.788);
+    filter: none;
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes logosGi {
+  0% {
+    top: -40px;
+    left: 0px;
+  }
+  100% {
+    top: 120px;
+    left: -150px;
+  }
+}
+
+#whatsapp {
+  background-color: rgba(255, 235, 205, 0.349);
+  border-radius: 1rem;
+  padding: 1rem;
+  position: absolute;
+  animation-duration: 2s;
+  animation: logosWh 1s ease;
+  top: 120px;
+  left: 150px;
+  transition: transform 0.6s;
+
+  &:hover {
+    background-color: rgba(240, 248, 255, 0.788);
+    filter: none;
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes logosWh {
+  0% {
+    top: -40px;
+    left: 0px;
+  }
+  100% {
+    top: 120px;
+    left: 150px;
+  }
+}
+
+#gmail {
+  background-color: rgba(255, 235, 205, 0.349);
+  border-radius: 1rem;
+  padding: 1rem;
+  position: absolute;
+  animation-duration: 2s;
+  animation: logosGm 1s ease;
+  top: 120px;
+  left: 400px;
+  transition: transform 0.6s;
+
+  &:hover {
+    background-color: rgba(240, 248, 255, 0.788);
+    filter: none;
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes logosGm {
+  0% {
+    top: -40px;
+    left: 0px;
+  }
+  100% {
+    top: 120px;
+    left: 400px;
+  }
+}

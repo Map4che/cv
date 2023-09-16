@@ -1,0 +1,133 @@
+.about {
+  background-color: rgba(15, 14, 14, 0.075);
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding: 4rem;
+  justify-content: space-around;
+  margin: 0 auto;
+  align-items: center;
+  border-radius: 80px;
+  box-shadow: inset -0.2rem -0.1rem 0.1rem 0.2rem rgba(99, 98, 98, 0.384);
+  color: white;
+}
+
+.aboutMe {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background: rgba(22, 21, 21, 0.171);
+  padding: 3rem;
+  border-radius: 4rem;
+  width: 84%;
+  align-items: center;
+}
+
+.container-curriculum {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-title {
+  font-size: 3.4rem;
+  text-align: center;
+}
+
+.nacionalidad {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.bio-info {
+  background-color: rgba(243, 240, 236, 0.034);
+  text-justify: auto;
+  padding: 2rem;
+  font-size: 2rem;
+  line-height: 3rem;
+  width: 50rem;
+  height: 300px;
+  flex-wrap: wrap;
+  overflow: auto;
+  border-radius: 2rem;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #666;
+    border: 2px solid #333;
+    border-radius: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: #444;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: #961111;
+  }
+}
+
+.img-about {
+  margin: 2rem;
+  width: 300px;
+  border-radius: 30%;
+  border: 4px solid #31303049;
+  box-shadow: 0.1rem 0.1rem 1rem 1rem rgba(145, 143, 143, 0.13);
+  transition: transform 0.3s;
+
+  &:hover {
+    box-shadow: 8px 8px 16px rgba(22, 22, 22, 0.281);
+  }
+}
+
+.container-curriculum {
+  display: flex;
+  justify-content: center;
+  width: 84%;
+  margin-top: 4rem;
+  background: rgba(22, 21, 21, 0.171);
+  border-radius: 25px;
+}
+
+.listaHojadeVida {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin: 4rem 4rem 0 4rem;
+}
+
+.listaHojadeVida h2 {
+  font-size: 2.8rem;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.container-curriculum iframe {
+  height: 300px;
+}
+
+.container-curriculum ul {
+  display: block;
+}
+.container-curriculum ul li {
+  display: inline-block;
+}
+
+.listaHojadeVida :last-child {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  margin: 2rem 0 4rem 0;
+  transition: 1s;
+}
+
+.listaHojadeVida :last-child:hover {
+  color: greenyellow;
+  text-decoration: underline;
+}
