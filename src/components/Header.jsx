@@ -27,7 +27,7 @@ const Header = () => {
             </Link>
           </li>
           <li className="lista-encabezado__item">
-            <Link className="link-header" to="/skills">
+            <Link className="link-header" to="/skillsandhobbies">
               Skills & Hobbies
             </Link>
           </li>

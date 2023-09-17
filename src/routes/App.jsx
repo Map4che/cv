@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 import About from "../pages/About";
 import { Page404 } from "../pages/Page404";
 import Contact from "../pages/Contact";
+import SkillsAndHobbies from "../pages/SkillsAndHobbies";
 
 function App() {
   return (
@@ -16,6 +17,11 @@ function App() {
         <Routes>
           <Route path="/" exact element={<Home />} />
           <Route path="/about" exact element={<About />} />
+          <Route
+            path="/skillsandhobbies"
+            exact
+            element={<SkillsAndHobbies />}
+          />
           <Route path="/contact" exact element={<Contact />} />
 
           <Route path="*" exact element={<Page404 />} />

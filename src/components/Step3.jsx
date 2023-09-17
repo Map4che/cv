@@ -34,7 +34,7 @@ const Step3 = ({ updateStep }) => {
     <>
       <Img />
       <Gracias>Gracias</Gracias>
-      <Respuesta>Te responderemos tan pronto sea posible</Respuesta>
+      <Respuesta>Te respondere tan pronto sea posible</Respuesta>
     </>
   );
 };

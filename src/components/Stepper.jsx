@@ -1,4 +1,4 @@
-import { Box, Stepper, Step, StepLabel } from "@mui/material";
+import { Box, Stepper, Step, StepLabel, Typography } from "@mui/material";
 
 const StepperComponent = (props) => {
   const steps = ["Datos usuario", "Motivo", "Complete"];
@@ -7,7 +7,11 @@ const StepperComponent = (props) => {
       <Stepper activeStep={props.step}>
         {steps.map((step) => (
           <Step key={step}>
-            <StepLabel>{step}</StepLabel>
+            <StepLabel sx={{ height: "6rem" }}>
+              <Typography sx={{ fontSize: "1.8rem", fontWeight: 600 }}>
+                {step}
+              </Typography>
+            </StepLabel>
           </Step>
         ))}
       </Stepper>
