@@ -20,11 +20,21 @@ const Step3 = ({ updateStep }) => {
     }
   `;
 
+  const Gracias = styled.h3`
+    color: rgba(6, 69, 110, 0.993);
+    text-align: center;
+    margin: 3rem 0 1rem;
+  `;
+
+  const Respuesta = styled.p`
+    text-align: center;
+  `;
+
   return (
     <>
       <Img />
-      <h3>Gracias</h3>
-      <p>Te responderemos tan pronto sea posible</p>
+      <Gracias>Gracias</Gracias>
+      <Respuesta>Te responderemos tan pronto sea posible</Respuesta>
     </>
   );
 };
