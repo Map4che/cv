@@ -16,8 +16,14 @@ footer {
 }
 
 footer ul li p {
-  margin-bottom: 8px;
+  margin-bottom: 1rem;
   font-size: 2rem;
+}
+
+footer ul li a {
+  margin: 1rem 0 1rem;
+  font-size: 2rem;
+  color: white;
 }
 .copyright {
   color: white;

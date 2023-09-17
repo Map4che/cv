@@ -6,7 +6,9 @@ const Footer = () => {
       <ul>
         <li>
           <p>Email:</p>
-          <p>ljuan648l@gmail.com</p>
+          <a className="mail-footer" href="mailto:ljuan648l@gmail.com">
+            ljuan648l@gmail.com
+          </a>
           <p className="copyright">&copy Copyright Map4che - 2023</p>
         </li>
       </ul>
