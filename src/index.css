@@ -12,8 +12,13 @@ html {
 }
 
 body {
-  background-image: url("/fondo3.jpg");
+  background-image: url("/fondo4.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.rutas:first-child {
+  margin-top: 8rem;
+  background-color: aqua;
 }

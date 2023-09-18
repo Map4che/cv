@@ -18,7 +18,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #4948486e;
+  background-color: rgba(15, 14, 14, 0.774);
   padding-bottom: 4rem;
 `;
 

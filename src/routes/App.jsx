@@ -9,12 +9,14 @@ import { Page404 } from "../pages/Page404";
 import Contact from "../pages/Contact";
 import SkillsAndHobbies from "../pages/SkillsAndHobbies";
 import Formacion from "../pages/Formacion";
+import "../index.css";
 
 function App() {
   return (
     <>
       <Router>
         <Header />
+        <div style={{ marginBottom: "20rem" }} />
         <Routes>
           <Route path="/" exact element={<Home />} />
           <Route path="/about" exact element={<About />} />
