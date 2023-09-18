@@ -18,7 +18,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #302e2e9d;
+  background-color: #4948486e;
   padding-bottom: 4rem;
 `;
 

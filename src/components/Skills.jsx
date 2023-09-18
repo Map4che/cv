@@ -6,6 +6,7 @@ import {
   Grid,
   Box,
 } from "@mui/material";
+import "../styles/Skills.css";
 
 const Skills = () => {
   const skills = [
@@ -69,7 +70,10 @@ const Skills = () => {
     >
       {skills.map((skill) => (
         <Grid item key={skill.id}>
-          <Card sx={{ maxWidth: 200 }}>
+          <Card
+            sx={{ maxWidth: 200, transition: "0.8s" }}
+            className="skills-container"
+          >
             <CardMedia
               component="img"
               image={skill.imagen}

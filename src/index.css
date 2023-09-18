@@ -12,5 +12,8 @@ html {
 }
 
 body {
-  background-color: black;
+  background-image: url("/fondo3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

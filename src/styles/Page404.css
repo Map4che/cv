@@ -112,7 +112,7 @@
   position: absolute;
   width: 30%;
   height: 7%;
-  background: #bfc0c0;
+  background: #bfc0c065;
   left: 35%;
   top: 80%;
   border-radius: 50%;
@@ -138,7 +138,7 @@
 }
 
 .bottom {
-  margin-top: 10px;
+  margin: 1rem auto 7.2rem;
 }
 
 .h1-error {
@@ -158,8 +158,8 @@
 }
 .p-error {
   text-align: center;
-  color: #585959;
-  font-size: 1.4rem;
+  color: #9fa0a0c9;
+  font-size: 1.8rem;
   margin-top: -20px;
   text-transform: uppercase;
 }
