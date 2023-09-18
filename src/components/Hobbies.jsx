@@ -42,32 +42,41 @@ const Hobbies = () => {
     >
       {hobbies.map((hobbie) => (
         <Grid item key={hobbie.id}>
-          <CardMedia
-            component="img"
-            image={hobbie.imagen}
-            alt={hobbie.value}
+          <Card
             sx={{
-              height: 150,
-              width: 150,
-              margin: "0 auto 0",
+              maxWidth: 500,
               transition: "0.8s",
+              backgroundColor: "#5553538d",
             }}
-            className="imagen-hobbie"
-          />
-          <CardContent>
-            <Typography
-              gutterBottom
-              variant="h5"
-              component="h5"
+          >
+            <CardMedia
+              component="img"
+              image={hobbie.imagen}
+              alt={hobbie.value}
               sx={{
-                textAlign: "center",
-                fontSize: "2.4rem",
-                fontWeight: "600",
+                height: 150,
+                width: 150,
+                margin: "0 auto 0",
+                transition: "0.8s",
               }}
-            >
-              {hobbie.value}
-            </Typography>
-          </CardContent>
+              className="imagen-hobbie"
+            />
+            <CardContent>
+              <Typography
+                gutterBottom
+                variant="h5"
+                component="h5"
+                sx={{
+                  textAlign: "center",
+                  fontSize: "2.4rem",
+                  fontWeight: "600",
+                  color: "#bebaba",
+                }}
+              >
+                {hobbie.value}
+              </Typography>
+            </CardContent>
+          </Card>
         </Grid>
       ))}
     </Grid>

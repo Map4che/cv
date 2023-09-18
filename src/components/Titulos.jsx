@@ -72,7 +72,7 @@ const Titulos = () => {
       container
       xs={8}
       style={{
-        background: "#c0dcf04e",
+        backgroundColor: "#646363a9",
         margin: "0 auto 0",
         justifyContent: "space-evenly",
         borderRadius: "4rem",

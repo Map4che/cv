@@ -12,47 +12,47 @@ const Skills = () => {
   const skills = [
     {
       id: 1,
-      imagen: "/logoJS.png",
+      imagen: "/logoJS.svg",
       value: "Javascript",
     },
     {
       id: 2,
-      imagen: "/logoReact.png",
+      imagen: "/logoReact.svg",
       value: "React",
     },
     {
       id: 3,
-      imagen: "/logoNode.png",
+      imagen: "/logoNode.svg",
       value: "NodeJs",
     },
     {
       id: 4,
-      imagen: "/logoJava.png",
+      imagen: "/logoJava.svg",
       value: "Java",
     },
     {
       id: 5,
-      imagen: "/logoHtml.png",
+      imagen: "/logoHtml.svg",
       value: "HTML",
     },
     {
       id: 6,
-      imagen: "/logoCss.png",
+      imagen: "/logoCss.svg",
       value: "CSS",
     },
     {
       id: 7,
-      imagen: "/logoMaterialUI.png",
+      imagen: "/logoMaterialUI.svg",
       value: "Material UI",
     },
     {
       id: 8,
-      imagen: "/logoTailwind.png",
+      imagen: "/logoTailwind.svg",
       value: "Tailwind",
     },
     {
       id: 9,
-      imagen: "/logoMongoDB.png",
+      imagen: "/logoMongoDB.svg",
       value: "MongoDB",
     },
     {
@@ -71,7 +71,11 @@ const Skills = () => {
       {skills.map((skill) => (
         <Grid item key={skill.id}>
           <Card
-            sx={{ maxWidth: 200, transition: "0.8s" }}
+            sx={{
+              maxWidth: 200,
+              transition: "0.8s",
+              backgroundColor: "#5553538d",
+            }}
             className="skills-container"
           >
             <CardMedia
@@ -90,7 +94,7 @@ const Skills = () => {
                 gutterBottom
                 variant="h5"
                 component="h5"
-                sx={{ fontSize: "1.6rem", fontWeight: 600 }}
+                sx={{ fontSize: "1.6rem", fontWeight: 600, color: "#bebaba" }}
               >
                 {skill.value}
               </Typography>
