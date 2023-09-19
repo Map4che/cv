@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import { Grid, Card, CardContent, CardMedia, Typography } from "@mui/material";
-//import { Button } from "@mui/material";
+import { Grid } from "@mui/material";
 import { Recorrer } from "./MapProject";
 
 const Title = styled.h2`
