@@ -1,4 +1,4 @@
-import Proyecto from "../components/proyecto";
+import Proyecto from "../components/Proyecto";
 import styled from "styled-components";
 
 const Container = styled.div`
