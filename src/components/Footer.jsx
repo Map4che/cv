@@ -9,7 +9,7 @@ const Footer = () => {
           <a className="mail-footer" href="mailto:ljuan648l@gmail.com">
             ljuan648l@gmail.com
           </a>
-          <p className="copyright">&copy Copyright Map4che - 2023</p>
+          <p className="copyright">&#169; Copyright Map4che - 2023</p>
         </li>
       </ul>
     </footer>
