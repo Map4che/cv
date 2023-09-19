@@ -11,16 +11,17 @@ const Header = () => {
     scrollTo(0, 0);
   };
 
+  const subir = () => {
+    scrollTo(0, 0);
+  };
+
   useEffect(() => {
     const handleResize = () => {
       const sc = window.innerWidth < 1000;
       setCelu(sc);
     };
-
-    // Agrega un event listener para detectar cambios en el tamaño de la ventana
     window.addEventListener("resize", handleResize);
 
-    // Limpia el event listener cuando el componente se desmonta
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -65,7 +66,7 @@ const Header = () => {
             <Link
               className="link-header"
               to="/about"
-              onClick={celu ? toggleClass : null}
+              onClick={celu ? toggleClass : subir}
             >
               Sobre mi
             </Link>
@@ -74,7 +75,7 @@ const Header = () => {
             <Link
               className="link-header"
               to="/skillsandhobbies"
-              onClick={celu ? toggleClass : null}
+              onClick={celu ? toggleClass : subir}
             >
               Skills & Hobbies
             </Link>
@@ -83,7 +84,7 @@ const Header = () => {
             <Link
               className="link-header"
               to="/education"
-              onClick={celu ? toggleClass : null}
+              onClick={celu ? toggleClass : subir}
             >
               Formación
             </Link>
@@ -92,7 +93,7 @@ const Header = () => {
             <Link
               className="link-header"
               to="/projects"
-              onClick={celu ? toggleClass : null}
+              onClick={celu ? toggleClass : subir}
             >
               Proyectos
             </Link>
@@ -101,7 +102,7 @@ const Header = () => {
             <Link
               className="link-header"
               to="/contact"
-              onClick={celu ? toggleClass : null}
+              onClick={celu ? toggleClass : subir}
             >
               Contacto y Ubicación
             </Link>
@@ -110,7 +111,7 @@ const Header = () => {
             <Link
               className="link-header"
               to="/error"
-              onClick={celu ? toggleClass : null}
+              onClick={celu ? toggleClass : subir}
             >
               Mostrar error
             </Link>
