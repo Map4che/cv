@@ -13,7 +13,7 @@ const Home = () => {
           target="_blank"
         >
           <img
-            src="/logoLinkedIn.png"
+            src="/logoLinkedIn.svg"
             alt="Linkedin"
             id="Linkedin"
             className="img-red-social"
@@ -25,7 +25,7 @@ const Home = () => {
           target="_blank"
         >
           <img
-            src="/logoGithub.png"
+            src="/LogoGithub.svg"
             alt=""
             id="github"
             className="img-red-social"
@@ -37,7 +37,7 @@ const Home = () => {
           target="_blank"
         >
           <img
-            src="/logoWhatsApp.png"
+            src="/logoWhatsApp.svg"
             alt=""
             id="whatsapp"
             className="img-red-social"
@@ -45,7 +45,7 @@ const Home = () => {
         </a>
         <a className="enlace-red-social" href="mailto:ljuan648l@gmail.com">
           <img
-            src="/logoGmail.png"
+            src="/logoGmail.svg"
             alt=""
             id="gmail"
             className="img-red-social"
