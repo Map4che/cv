@@ -13,6 +13,7 @@ const Header = () => {
 
   const subir = () => {
     scrollTo(0, 0);
+    setActive(false);
   };
 
   useEffect(() => {
