@@ -7,6 +7,7 @@ const Header = () => {
 
   const toggleClass = () => {
     setActive(!active);
+    scrollTo(0, 0);
   };
 
   return (
@@ -33,27 +34,31 @@ const Header = () => {
       <nav className="opciones-encabezado">
         <ul className={`lista-encabezado ${active ? "mostrar" : ""}`}>
           <li className="lista-encabezado__item">
-            <Link className="link-header" to="/about">
+            <Link className="link-header" to="/about" onClick={toggleClass}>
               Sobre mi
             </Link>
           </li>
           <li className="lista-encabezado__item">
-            <Link className="link-header" to="/skillsandhobbies">
+            <Link
+              className="link-header"
+              to="/skillsandhobbies"
+              onClick={toggleClass}
+            >
               Skills & Hobbies
             </Link>
           </li>
           <li className="lista-encabezado__item">
-            <Link className="link-header" to="/education">
+            <Link className="link-header" to="/education" onClick={toggleClass}>
               Formación
             </Link>
           </li>
           <li className="lista-encabezado__item">
-            <Link className="link-header" to="/projects">
+            <Link className="link-header" to="/projects" onClick={toggleClass}>
               Proyectos
             </Link>
           </li>
           <li className="lista-encabezado__item">
-            <Link className="link-header" to="/contact">
+            <Link className="link-header" to="/contact" onClick={toggleClass}>
               Contacto y Ubicación
             </Link>
           </li>
