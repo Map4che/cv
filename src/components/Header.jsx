@@ -12,12 +12,18 @@ const Header = () => {
   };
 
   useEffect(() => {
-    const pantalla = () => {
+    const handleResize = () => {
       const sc = window.innerWidth < 1000;
       setCelu(sc);
     };
-    pantalla();
-    window.removeEventListener("resize", pantalla);
+
+    // Agrega un event listener para detectar cambios en el tamaño de la ventana
+    window.addEventListener("resize", handleResize);
+
+    // Limpia el event listener cuando el componente se desmonta
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   return (
