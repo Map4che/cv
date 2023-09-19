@@ -10,7 +10,7 @@
   width: 15rem;
   border-radius: 50%;
   filter: grayscale(100%);
-  margin: 0 auto 12rem;
+  margin: 0 auto 18rem;
   z-index: 1;
 
   &:hover {

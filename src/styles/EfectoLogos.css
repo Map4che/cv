@@ -1,10 +1,11 @@
 .fotos-container {
   position: absolute;
   right: 50%;
+  top: 22rem;
   display: flex;
   width: 0%;
   justify-content: space-evenly;
-  margin: 0 auto 2rem;
+  margin: 0 auto 4rem;
 }
 
 .enlace-red-social {
@@ -22,7 +23,7 @@
   width: 10rem;
   height: 8rem;
   filter: grayscale(100%);
-  margin: 4rem auto;
+  margin: 6rem auto;
 }
 
 #Linkedin {
@@ -32,8 +33,8 @@
   position: absolute;
   animation-duration: 2s;
   animation: logosLi 1s ease;
-  top: 120px;
-  left: -400px;
+  top: 25rem;
+  left: -100px;
   transition: transform 0.6s;
 
   &:hover {
@@ -49,8 +50,8 @@
     left: 0px;
   }
   100% {
-    top: 120px;
-    left: -400px;
+    top: 25rem;
+    left: -100px;
   }
 }
 
@@ -62,7 +63,7 @@
   animation-duration: 2s;
   animation: logosGi 1s ease;
   top: 120px;
-  left: -150px;
+  left: -100px;
   transition: transform 0.6s;
 
   &:hover {
@@ -79,7 +80,7 @@
   }
   100% {
     top: 120px;
-    left: -150px;
+    left: -100px;
   }
 }
 
@@ -91,7 +92,7 @@
   animation-duration: 2s;
   animation: logosWh 1s ease;
   top: 120px;
-  left: 150px;
+  left: 100px;
   transition: transform 0.6s;
 
   &:hover {
@@ -108,7 +109,7 @@
   }
   100% {
     top: 120px;
-    left: 150px;
+    left: 100px;
   }
 }
 
@@ -119,8 +120,8 @@
   position: absolute;
   animation-duration: 2s;
   animation: logosGm 1s ease;
-  top: 120px;
-  left: 400px;
+  top: 25rem;
+  left: 10rem;
   transition: transform 0.6s;
 
   &:hover {
@@ -136,7 +137,113 @@
     left: 0px;
   }
   100% {
+    top: 25rem;
+    left: 10rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .fotos-container {
+    top: 35rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .fotos-container {
+    top: 38rem;
+  }
+
+  .img-red-social {
+    margin: 4rem auto;
+  }
+
+  #Linkedin {
+    top: 120px;
+    left: -400px;
+    transition: transform 0.6s;
+
+    &:hover {
+      background-color: rgba(240, 248, 255, 0.788);
+      filter: none;
+      transform: rotateY(360deg);
+    }
+  }
+  @keyframes logosLi {
+    0% {
+      top: -40px;
+      left: 0px;
+    }
+    100% {
+      top: 120px;
+      left: -400px;
+    }
+  }
+
+  #github {
+    top: 120px;
+    left: -150px;
+
+    &:hover {
+      background-color: rgba(240, 248, 255, 0.788);
+      filter: none;
+      transform: rotateY(360deg);
+    }
+  }
+
+  @keyframes logosGi {
+    0% {
+      top: -40px;
+      left: 0px;
+    }
+    100% {
+      top: 120px;
+      left: -150px;
+    }
+  }
+
+  #whatsapp {
+    top: 120px;
+    left: 150px;
+    transition: transform 0.6s;
+
+    &:hover {
+      background-color: rgba(240, 248, 255, 0.788);
+      filter: none;
+      transform: rotateY(360deg);
+    }
+  }
+
+  @keyframes logosWh {
+    0% {
+      top: -40px;
+      left: 0px;
+    }
+    100% {
+      top: 120px;
+      left: 150px;
+    }
+  }
+
+  #gmail {
     top: 120px;
     left: 400px;
+    transition: transform 0.6s;
+
+    &:hover {
+      background-color: rgba(240, 248, 255, 0.788);
+      filter: none;
+      transform: rotateY(360deg);
+    }
+  }
+
+  @keyframes logosGm {
+    0% {
+      top: -40px;
+      left: 0px;
+    }
+    100% {
+      top: 120px;
+      left: 400px;
+    }
   }
 }
