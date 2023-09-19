@@ -28,9 +28,21 @@ const Header = () => {
           <p className="animacion-nombre">/&gt;</p>
         </div>
       </div>
-      <div className="container-hamburger">
-        <div className="hamburguer" onClick={toggleClass}></div>
+      <div class={`hamburguer-bt ${active ? "on" : ""}`}>
+        <div
+          class="hamburguer-bt__stripe hamburguer-bt__stripe__top"
+          onClick={toggleClass}
+        ></div>
+        <div
+          class="hamburguer-bt__stripe hamburguer-bt__stripe__middle"
+          onClick={toggleClass}
+        ></div>
+        <div
+          class="hamburguer-bt__stripe hamburguer-bt__stripe__bottom"
+          onClick={toggleClass}
+        ></div>
       </div>
+
       <nav className="opciones-encabezado">
         <ul className={`lista-encabezado ${active ? "mostrar" : ""}`}>
           <li className="lista-encabezado__item">
