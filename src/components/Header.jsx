@@ -1,19 +1,29 @@
 import "../styles/Header.css";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Header = () => {
   const [active, setActive] = useState(false);
+  const [celu, setCelu] = useState(false);
 
   const toggleClass = () => {
     setActive(!active);
     scrollTo(0, 0);
   };
 
+  useEffect(() => {
+    const pantalla = () => {
+      const sc = window.innerWidth < 1000;
+      setCelu(sc);
+    };
+    pantalla();
+    window.removeEventListener("resize", pantalla);
+  }, []);
+
   return (
     <header className="encabezado">
       <div className="nombre-encabezado">
-        <Link to="/mostrarError">
+        <Link to="/">
           <img
             src="/LogoCara2.svg"
             alt="LogoMap4che"
@@ -28,17 +38,17 @@ const Header = () => {
           <p className="animacion-nombre">/&gt;</p>
         </div>
       </div>
-      <div class={`hamburguer-bt ${active ? "on" : ""}`}>
+      <div className={`hamburguer-bt ${active ? "on" : ""}`}>
         <div
-          class="hamburguer-bt__stripe hamburguer-bt__stripe__top"
+          className="hamburguer-bt__stripe hamburguer-bt__stripe__top"
           onClick={toggleClass}
         ></div>
         <div
-          class="hamburguer-bt__stripe hamburguer-bt__stripe__middle"
+          className="hamburguer-bt__stripe hamburguer-bt__stripe__middle"
           onClick={toggleClass}
         ></div>
         <div
-          class="hamburguer-bt__stripe hamburguer-bt__stripe__bottom"
+          className="hamburguer-bt__stripe hamburguer-bt__stripe__bottom"
           onClick={toggleClass}
         ></div>
       </div>
@@ -46,7 +56,11 @@ const Header = () => {
       <nav className="opciones-encabezado">
         <ul className={`lista-encabezado ${active ? "mostrar" : ""}`}>
           <li className="lista-encabezado__item">
-            <Link className="link-header" to="/about" onClick={toggleClass}>
+            <Link
+              className="link-header"
+              to="/about"
+              onClick={celu ? toggleClass : null}
+            >
               Sobre mi
             </Link>
           </li>
@@ -54,24 +68,45 @@ const Header = () => {
             <Link
               className="link-header"
               to="/skillsandhobbies"
-              onClick={toggleClass}
+              onClick={celu ? toggleClass : null}
             >
               Skills & Hobbies
             </Link>
           </li>
           <li className="lista-encabezado__item">
-            <Link className="link-header" to="/education" onClick={toggleClass}>
+            <Link
+              className="link-header"
+              to="/education"
+              onClick={celu ? toggleClass : null}
+            >
               Formación
             </Link>
           </li>
           <li className="lista-encabezado__item">
-            <Link className="link-header" to="/projects" onClick={toggleClass}>
+            <Link
+              className="link-header"
+              to="/projects"
+              onClick={celu ? toggleClass : null}
+            >
               Proyectos
             </Link>
           </li>
           <li className="lista-encabezado__item">
-            <Link className="link-header" to="/contact" onClick={toggleClass}>
+            <Link
+              className="link-header"
+              to="/contact"
+              onClick={celu ? toggleClass : null}
+            >
               Contacto y Ubicación
+            </Link>
+          </li>
+          <li className="lista-encabezado__item">
+            <Link
+              className="link-header"
+              to="/error"
+              onClick={celu ? toggleClass : null}
+            >
+              Mostrar error
             </Link>
           </li>
         </ul>
