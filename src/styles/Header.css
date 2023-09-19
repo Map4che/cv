@@ -3,29 +3,25 @@
   top: 0;
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 0.5rem;
+  justify-content: space-between;
   background-image: linear-gradient(
     to right,
     rgba(7, 108, 175, 0.993),
     rgba(01, 16, 26, 0.64)
   );
-  border-radius: 1000px;
-  width: 90%;
-  margin: 2rem auto;
+  margin: 0 auto 0;
+  width: 100%;
   height: 140px;
+  padding: 4rem;
+  z-index: 2;
 }
 
 .logo-Map4che {
-  width: 120px;
+  width: 6rem;
   filter: contrast(1000%);
-  margin-top: 20px;
+  margin: 2rem -2rem 0;
   transition: 0.8s;
   animation: cambioLogo 2s ease-in-out infinite alternate;
-
-  &:hover {
-    transform: scale(1.1);
-  }
 }
 
 @keyframes cambioLogo {
@@ -52,22 +48,18 @@
 .nombre-encabezado {
   display: flex;
   font-size: 2.4rem;
-  width: 35%;
+  width: 100%;
   align-items: center;
   justify-content: space-evenly;
   transition: 0.8s;
   transform-origin: center bottom;
-
-  &:hover {
-    font-size: 2.8rem;
-  }
 }
 
 .animacion-nombre {
-  margin: -2rem;
   font-size: 4rem;
   font-weight: 900;
   color: rgb(21, 255, 0);
+  margin-left: -1rem;
   animation: cambioColor 5s ease-in-out infinite alternate;
 }
 
@@ -86,16 +78,22 @@
 
 .nombre {
   color: rgb(0, 236, 253);
+  margin-right: -5rem;
+}
+
+.nombre-con__animacion {
+  display: flex;
+  justify-content: center;
+  padding: 4rem;
 }
 
 .lista-encabezado {
-  display: flex;
-  justify-content: space-evenly;
+  display: none;
 }
 
 .lista-encabezado__item {
   list-style: none;
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin: 2rem;
   transition: 0.6s;
   transform-origin: center bottom;
@@ -113,5 +111,120 @@
     color: red;
     background-color: rgba(240, 255, 255, 0.123);
     border-radius: 50px;
+  }
+}
+
+.mostrar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 0;
+  right: -5rem;
+  background-color: rgba(0, 0, 0, 0.952);
+  padding: 4rem;
+  height: 100vh;
+  box-shadow: 0 0 0 20rem rgba(0, 0, 0, 0.596);
+  z-index: 3;
+}
+
+.mostrar li Link {
+  font-size: 2.5rem;
+}
+
+.hamburguer {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 4rem;
+  height: 4rem;
+  background-color: aliceblue;
+  z-index: 4;
+}
+
+@media screen and (min-width: 600px) {
+  .encabezado {
+    margin: 2rem auto 0;
+    width: 94%;
+    left: 2rem;
+    border-radius: 4rem;
+  }
+
+  .logo-Map4che {
+    width: 10rem;
+    margin: 3rem 4rem 0 -4rem;
+  }
+
+  .nombre-encabezado {
+    display: flex;
+    font-size: 2rem;
+    width: 90%;
+    justify-content: center;
+  }
+
+  .animacion-nombre {
+    font-size: 4rem;
+    margin-left: 0;
+  }
+
+  .nombre {
+    margin-right: 0;
+  }
+
+  .nombre-con__animacion {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .mostrar {
+    right: -4rem;
+    width: 80vw;
+  }
+
+  .hamburguer {
+    top: 3rem;
+    right: 2rem;
+    width: 6rem;
+    height: 6rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .hamburguer {
+    display: none;
+  }
+
+  .lista-encabezado {
+    display: flex;
+    font-size: 1.8rem;
+  }
+
+  .encabezado {
+    left: 6rem;
+  }
+
+  .logo-Map4che {
+    width: 10rem;
+    margin-top: 4rem 0 0 0;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .nombre-encabezado {
+    font-size: 2rem;
+    width: 40%;
+
+    &:hover {
+      font-size: 2.8rem;
+    }
+  }
+
+  .link-header {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.8rem;
   }
 }

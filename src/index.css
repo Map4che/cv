@@ -19,7 +19,12 @@ body {
   background-size: cover;
 }
 
-.rutas:first-child {
-  margin-top: 8rem;
-  background-color: aqua;
+.inicio-style {
+  margin-top: 16rem;
+}
+
+@media screen and (min-width: 600px) {
+  .inicio-style {
+    margin-top: 20rem;
+  }
 }

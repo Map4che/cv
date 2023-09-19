@@ -37,16 +37,25 @@ const Hobbies = () => {
   return (
     <Grid
       container
-      spacing={6}
+      spacing={2}
       sx={{ margin: "1rem auto 2rem", justifyContent: "center" }}
     >
       {hobbies.map((hobbie) => (
         <Grid item key={hobbie.id}>
           <Card
             sx={{
-              maxWidth: 500,
+              maxWidth: 200,
               transition: "0.8s",
               backgroundColor: "#5553538d",
+
+              "@media screen and (min-width:600px)": {
+                height: "25rem",
+              },
+
+              "@media screen and (min-width:1000px)": {
+                maxWidth: 500,
+                marginRight: "2rem",
+              },
             }}
           >
             <CardMedia

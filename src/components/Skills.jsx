@@ -58,14 +58,14 @@ const Skills = () => {
     {
       id: 10,
       imagen: "/logoGithub.png",
-      value: "Git and Hithub",
+      value: "Github",
     },
   ];
 
   return (
     <Grid
       container
-      spacing={5}
+      spacing={2}
       sx={{ justifyContent: "center", maxWidth: "60%" }}
     >
       {skills.map((skill) => (
@@ -83,10 +83,16 @@ const Skills = () => {
               image={skill.imagen}
               alt={skill.value}
               sx={{
-                height: 140,
-                width: 140,
+                height: "80px",
+                width: "90px",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
+
+                "@media screen and (min-width:1000px)": {
+                  height: "140px",
+                  width: "140px",
+                  marginRight: "2rem",
+                },
               }}
             />
             <CardContent>
@@ -96,9 +102,13 @@ const Skills = () => {
                 component="h5"
                 sx={{
                   fontFamily: "Mooli, sans-serif",
-                  fontSize: "1.6rem",
+                  fontSize: "1.2rem",
                   fontWeight: 600,
                   color: "#bebaba",
+
+                  "@media screen and (min-width:1000px)": {
+                    fontSize: "1.6rem",
+                  },
                 }}
               >
                 {skill.value}

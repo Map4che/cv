@@ -6,13 +6,27 @@
 }
 
 .foto-inicio {
-  width: 200px;
+  position: relative;
+  width: 15rem;
   border-radius: 50%;
   filter: grayscale(100%);
-  margin: 2rem auto 12rem;
+  margin: 0 auto 12rem;
   z-index: 1;
 
   &:hover {
     filter: none;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .foto-inicio {
+    position: relative;
+    width: 20rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .foto-inicio {
+    margin: 2rem auto 12rem;
   }
 }

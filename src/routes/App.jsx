@@ -17,7 +17,7 @@ function App() {
     <>
       <Router>
         <Header />
-        <div style={{ marginBottom: "20rem" }} />
+        <div className="inicio-style" />
         <Routes>
           <Route path="/" exact element={<Home />} />
           <Route path="/about" exact element={<About />} />

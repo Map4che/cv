@@ -1,8 +1,14 @@
 import "../styles/Header.css";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const Header = () => {
-  const colores = {};
+  const [active, setActive] = useState(false);
+
+  const toggleClass = () => {
+    setActive(!active);
+  };
+
   return (
     <header className="encabezado">
       <div className="nombre-encabezado">
@@ -13,14 +19,19 @@ const Header = () => {
             className="logo-Map4che"
           />
         </Link>
-        <p className="animacion-nombre">&lt;</p>
-        <Link className="nombre" to="/">
-          Juan Pablo Londoño G
-        </Link>
-        <p className="animacion-nombre"> /&gt;</p>
+        <div className="nombre-con__animacion">
+          <p className="animacion-nombre">&lt;</p>
+          <Link className="nombre" to="/">
+            Juan Pablo Londoño G
+          </Link>
+          <p className="animacion-nombre">/&gt;</p>
+        </div>
+      </div>
+      <div className="container-hamburger">
+        <div className="hamburguer" onClick={toggleClass}></div>
       </div>
       <nav className="opciones-encabezado">
-        <ul className="lista-encabezado">
+        <ul className={`lista-encabezado ${active ? "mostrar" : ""}`}>
           <li className="lista-encabezado__item">
             <Link className="link-header" to="/about">
               Sobre mi
