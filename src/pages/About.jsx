@@ -15,7 +15,7 @@ const About = () => {
   Al mismo tiempo y en busca de mejores oportunidades para mi familia, 
   comencé a estudiar programación en 2021. Desde entonces, tuve la 
   oportunidad de trabajar en varios proyectos con Distrito Click, una 
-  empresa dedicada al diseño de páginas web. Además, me destacé como uno de 
+  empresa dedicada al diseño de páginas web. Además, me destaqué como uno de 
   los mejores estudiantes en el estudio de programación, lo que llevó a que 
   mi docente me acogiera y tuviera la oportunidad de trabajar para la empresa 
   Audio Tools, colaborando en equipo, en diversos proyectos. Actualmente trabajo 
