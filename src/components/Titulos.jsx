@@ -70,6 +70,7 @@ const Titulos = () => {
   return (
     <Grid
       container
+      item
       xs={10}
       style={{
         backgroundColor: "#646363a9",

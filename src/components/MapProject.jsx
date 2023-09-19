@@ -41,6 +41,7 @@ export const Recorrer = ({ option }) => {
           alt={o.titulo}
           sx={{
             width: "70rem",
+            borderRadius: "3rem",
           }}
         />
         <CardContent sx={{ order: o.id % 2 === 0 ? -1 : "inherit" }}>
