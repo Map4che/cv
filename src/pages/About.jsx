@@ -57,7 +57,7 @@ const About = () => {
               target="_blank"
               download
             >
-              Decargar{" "}
+              Descargar{" "}
             </a>
           </li>
           <li className="listaHojadeVida">
@@ -68,7 +68,7 @@ const About = () => {
               target="_blank"
               download
             >
-              Decargar{" "}
+              Descargar{" "}
             </a>
           </li>
         </ul>

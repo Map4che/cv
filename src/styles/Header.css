@@ -51,7 +51,7 @@
 
 .nombre-encabezado {
   display: flex;
-  font-size: 1.8rem;
+  font-size: 2.4rem;
   width: 35%;
   align-items: center;
   justify-content: space-evenly;
@@ -59,7 +59,7 @@
   transform-origin: center bottom;
 
   &:hover {
-    font-size: 2.2rem;
+    font-size: 2.8rem;
   }
 }
 

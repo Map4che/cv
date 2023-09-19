@@ -70,7 +70,7 @@ const Titulos = () => {
   return (
     <Grid
       container
-      xs={8}
+      xs={10}
       style={{
         backgroundColor: "#646363a9",
         margin: "0 auto 0",
@@ -94,21 +94,23 @@ const Titulos = () => {
           <CardContent>
             <Typography
               sx={{
-                fontSize: "1.4rem",
+                fontSize: "1.8rem",
                 fontWeight: "900",
                 maxWidth: "90%",
                 textAlign: "center",
                 flexWrap: "wrap",
                 margin: "0 auto 0",
+                fontFamily: "Mooli, sans-serif",
               }}
             >
               {titulo.titulo} - {titulo.fecha}
             </Typography>
             <Typography
               sx={{
+                fontFamily: "Mooli, sans-serif",
                 textAlign: "center",
-                fontSize: "1.8rem",
-                fontWeight: "600",
+                fontSize: "2rem",
+                fontWeight: "900",
                 margin: "0 auto 0",
                 animation:
                   titulo.estado === "Finalizado"

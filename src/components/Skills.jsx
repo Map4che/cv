@@ -94,7 +94,12 @@ const Skills = () => {
                 gutterBottom
                 variant="h5"
                 component="h5"
-                sx={{ fontSize: "1.6rem", fontWeight: 600, color: "#bebaba" }}
+                sx={{
+                  fontFamily: "Mooli, sans-serif",
+                  fontSize: "1.6rem",
+                  fontWeight: 600,
+                  color: "#bebaba",
+                }}
               >
                 {skill.value}
               </Typography>

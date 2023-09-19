@@ -67,6 +67,7 @@ const Hobbies = () => {
                 variant="h5"
                 component="h5"
                 sx={{
+                  fontFamily: "Mooli, sans-serif",
                   textAlign: "center",
                   fontSize: "2.4rem",
                   fontWeight: "600",

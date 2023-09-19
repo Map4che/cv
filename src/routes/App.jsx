@@ -9,6 +9,7 @@ import { Page404 } from "../pages/Page404";
 import Contact from "../pages/Contact";
 import SkillsAndHobbies from "../pages/SkillsAndHobbies";
 import Formacion from "../pages/Formacion";
+import Projects from "../pages/Projects";
 import "../index.css";
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
             element={<SkillsAndHobbies />}
           />
           <Route path="/education" exact element={<Formacion />} />
+          <Route path="/projects" exact element={<Projects />} />
           <Route path="/contact" exact element={<Contact />} />
 
           <Route path="*" exact element={<Page404 />} />
