@@ -12,6 +12,14 @@ const Proyecto = () => {
   const proyectoLanding = [
     {
       id: 1,
+      imagen: "/projects/marlui.png",
+      titulo: "Ecommerce Marlui",
+      descripcion: "Ecommerce",
+      repo: "https://github.com/No-Country/c14-12-n-node-react.git",
+      enlace: "https://c14-12-n-node-react.vercel.app/",
+    },
+    {
+      id: 2,
       imagen: "/projects/orgAlura.png",
       titulo: "Organizacion Alura",
       descripcion: "Pagina de inicio",
@@ -19,7 +27,7 @@ const Proyecto = () => {
       enlace: "https://organizacion-alura-ozgpymsyi-map4che.vercel.app/",
     },
     {
-      id: 2,
+      id: 3,
       imagen: "/projects/superCamiones.png",
       titulo: "Super Camiones",
       descripcion: "Pagina de inicio",
@@ -27,7 +35,7 @@ const Proyecto = () => {
       enlace: "https://map4che.github.io/SuperCamiones/",
     },
     {
-      id: 3,
+      id: 4,
       imagen: "/projects/vetPalace.png",
       titulo: "Vet Palace",
       descripcion: "Pagina de inicio",
@@ -35,7 +43,7 @@ const Proyecto = () => {
       enlace: "https://vetpalace-lso3llqp9-map4che.vercel.app/",
     },
     {
-      id: 4,
+      id: 5,
       imagen: "/projects/barberia.png",
       titulo: "Barberia Alura",
       descripcion: "Pagina de inicio",
