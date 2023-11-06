@@ -108,12 +108,12 @@ export const Recorrer = ({ option }) => {
           </Typography>
 
           <Button1>
-            <a href={o.repo} style={{ color: "#247bec" }}>
+            <a href={o.repo} style={{ color: "#247bec" }} target="_blank">
               Repositorio
             </a>
           </Button1>
           <Button2>
-            <a href={o.enlace} style={{ color: "white" }}>
+            <a href={o.enlace} style={{ color: "white" }} target="_blank">
               Ver demo
             </a>
           </Button2>
