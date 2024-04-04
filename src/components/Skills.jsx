@@ -12,24 +12,30 @@ const Skills = () => {
   const skills = [
     {
       id: 1,
+      imagen: "/logoJava.svg",
+      value: "Java",
+    },
+    {
+      id: 11,
+      imagen: "/logoSpring.svg",
+      value: "Spring",
+    },
+    {
+      id: 2,
       imagen: "/logoJS.svg",
       value: "Javascript",
     },
     {
-      id: 2,
+      id: 3,
       imagen: "/logoReact.svg",
       value: "React",
     },
     {
-      id: 3,
+      id: 4,
       imagen: "/logoNode.svg",
       value: "NodeJs",
     },
-    {
-      id: 4,
-      imagen: "/logoJava.svg",
-      value: "Java",
-    },
+
     {
       id: 5,
       imagen: "/logoHtml.svg",
@@ -51,9 +57,29 @@ const Skills = () => {
       value: "Tailwind",
     },
     {
+      id: 12,
+      imagen: "/logoMySQL.svg",
+      value: "SQL",
+    },
+    {
       id: 9,
       imagen: "/logoMongoDB.svg",
       value: "MongoDB",
+    },
+    {
+      id: 13,
+      imagen: "/logoJUnit.svg",
+      value: "JUnit",
+    },
+    {
+      id: 14,
+      imagen: "/logoMockito.svg",
+      value: "Mockito",
+    },
+    {
+      id: 15,
+      imagen: "/logoDocker.svg",
+      value: "Docker",
     },
     {
       id: 10,

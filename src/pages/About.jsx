@@ -50,10 +50,10 @@ const About = () => {
         <ul>
           <li className="listaHojadeVida">
             <h2>Hoja de vida en Español</h2>
-            <iframe src="https://drive.google.com/file/d/1PlH5-0g_ZBOUSn9d11FWigK3bChxLkN0/preview"></iframe>
+            <iframe src="https://drive.google.com/file/d/1H_n2FOOywo66se4RakUydjHvp3hwOB4d/preview"></iframe>
 
             <a
-              href="https://drive.google.com/file/d/1PlH5-0g_ZBOUSn9d11FWigK3bChxLkN0/view?usp=share_link"
+              href="https://drive.google.com/file/d/1H_n2FOOywo66se4RakUydjHvp3hwOB4d/view?usp=drive_link"
               target="_blank"
               download
             >
@@ -62,9 +62,9 @@ const About = () => {
           </li>
           <li className="listaHojadeVida">
             <h2>Hoja de vida en ingles</h2>
-            <iframe src="https://drive.google.com/file/d/1RKfkuy2-Qr_cNi3bH6uvWt-XK81sfOXo/preview"></iframe>
+            <iframe src="https://drive.google.com/file/d/1vKFQNMHMtiRiq5VnnLFRfNq5dmM8GN1T/preview"></iframe>
             <a
-              href="https://drive.google.com/file/d/1RKfkuy2-Qr_cNi3bH6uvWt-XK81sfOXo/view?usp=share_link"
+              href="https://drive.google.com/file/d/1vKFQNMHMtiRiq5VnnLFRfNq5dmM8GN1T/view?usp=drive_link"
               target="_blank"
               download
             >

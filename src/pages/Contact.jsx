@@ -5,6 +5,7 @@ import Step1 from "../components/Step1";
 import Step2 from "../components/Step2";
 import Step3 from "../components/Step3";
 import Stepper from "../components/Stepper";
+import axios from "axios";
 import "../styles/Map.css";
 
 const Form = styled.div`
@@ -22,14 +23,55 @@ const Form = styled.div`
 
 const Contact = () => {
   const [step, setStep] = useState(0);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    reason: "",
+    message: "",
+  });
 
   const updateStep = (step) => {
     setStep(step);
   };
 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await axios.post(
+        "https://formspree.io/ljuan648l@gmail.com",
+        formData
+      );
+
+      console.log(response.data);
+
+      if (response.status === 200) {
+        updateStep(step + 1);
+      } else {
+        console.error("Form submission failed:", response.data);
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
+  };
+
   const steps = {
-    0: <Step1 updateStep={updateStep} />,
-    1: <Step2 updateStep={updateStep} />,
+    0: (
+      <Step1
+        updateStep={updateStep}
+        formData={formData}
+        setFormData={setFormData}
+      />
+    ),
+    1: (
+      <Step2
+        updateStep={updateStep}
+        formData={formData}
+        setFormData={setFormData}
+        onSubmit={handleSubmit}
+      />
+    ),
     2: <Step3 updateStep={updateStep} />,
   };
 

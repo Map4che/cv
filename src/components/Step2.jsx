@@ -4,7 +4,7 @@ import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 
-const Step2 = ({ updateStep }) => {
+const Step2 = ({ updateStep, formData, setFormData, handelSubmit }) => {
   const [reason, setReason] = useState("");
   const [message, setMessage] = useState({ value: "", valid: null });
 
@@ -25,6 +25,11 @@ const Step2 = ({ updateStep }) => {
       onSubmit={(e) => {
         e.preventDefault();
         if (message.valid) {
+          setFormData((prevData) => ({
+            ...prevData,
+            reason: reason,
+            message: message.value,
+          }));
           updateStep(2);
         } else {
           console.log("Invalido");
@@ -34,6 +39,7 @@ const Step2 = ({ updateStep }) => {
       <FormControl fullWidth>
         <InputLabel>Motivo consulta</InputLabel>
         <Select
+          name="Motivo"
           fullWidth
           label="Motivo contacto"
           value={reason}
@@ -49,6 +55,7 @@ const Step2 = ({ updateStep }) => {
       </FormControl>
 
       <TextField
+        name="Mensaje"
         label="Mensaje o proyecto"
         multiline
         maxRows={4}
@@ -68,7 +75,7 @@ const Step2 = ({ updateStep }) => {
         sx={{ fontSize: "4rem !important" }}
       />
       {message.valid ? (
-        <Button variant="contained" type="submit">
+        <Button variant="contained" type="submit" onClick={handelSubmit}>
           Finalizar
         </Button>
       ) : (

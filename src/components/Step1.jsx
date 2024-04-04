@@ -2,7 +2,7 @@ import { useState } from "react";
 import { TextField, Button, Box } from "@mui/material";
 import styled from "styled-components";
 
-const Step1 = ({ updateStep }) => {
+const Step1 = ({ updateStep, formData, setFormData }) => {
   const [name, setName] = useState({ value: "", valid: null });
   const [email, setEmail] = useState({ value: "", valid: null });
   const [phone, setPhone] = useState({ value: "", valid: null });
@@ -34,6 +34,12 @@ const Step1 = ({ updateStep }) => {
       onSubmit={(e) => {
         e.preventDefault();
         if (name.valid && email.valid && phone.valid) {
+          setFormData((prevData) => ({
+            ...prevData,
+            name: name.value,
+            email: email.value,
+            phone: phone.value,
+          }));
           updateStep(1);
         } else {
           console.log("Invalido");
@@ -41,6 +47,7 @@ const Step1 = ({ updateStep }) => {
       }}
     >
       <TextField
+        name="Nombre"
         fullWidth
         margin="normal"
         label="Nombre"
@@ -58,6 +65,7 @@ const Step1 = ({ updateStep }) => {
         }
       />
       <TextField
+        name="Email"
         fullWidth
         margin="normal"
         label="Correo Electronico"
@@ -75,6 +83,7 @@ const Step1 = ({ updateStep }) => {
         }
       />
       <TextField
+        name="Telefono"
         fullWidth
         margin="normal"
         type="number"
