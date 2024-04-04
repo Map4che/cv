@@ -20,20 +20,21 @@ const Proyecto = () => {
     },
     {
       id: 2,
+      imagen: "/projects/superCamiones.png",
+      titulo: "Supercamiones",
+      descripcion: "Pagina de inicio",
+      repo: "https://github.com/Map4che/SuperCamiones.git",
+      enlace: "https://map4che.github.io/SuperCamiones/",
+    },
+    {
+      id: 3,
       imagen: "/projects/orgAlura.png",
       titulo: "Organizacion Alura",
       descripcion: "Pagina de inicio",
       repo: "https://github.com/Map4che/OrganizacionAlura.git",
       enlace: "https://organizacion-alura-ozgpymsyi-map4che.vercel.app/",
     },
-    {
-      id: 3,
-      imagen: "/projects/superCamiones.png",
-      titulo: "Super Camiones",
-      descripcion: "Pagina de inicio",
-      repo: "https://github.com/Map4che/SuperCamiones.git",
-      enlace: "https://map4che.github.io/SuperCamiones/",
-    },
+
     {
       id: 4,
       imagen: "/projects/vetPalace.png",

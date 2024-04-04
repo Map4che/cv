@@ -72,7 +72,13 @@ const Contact = () => {
         onSubmit={handleSubmit}
       />
     ),
-    2: <Step3 updateStep={updateStep} />,
+    2: (
+      <Step3
+        updateStep={updateStep}
+        formData={formData}
+        setFormData={setFormData}
+      />
+    ),
   };
 
   return (

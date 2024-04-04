@@ -4,13 +4,14 @@ import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 
-const Step2 = ({ updateStep, formData, setFormData, handelSubmit }) => {
+const Step2 = ({ updateStep, formData, setFormData, handleSubmit }) => {
   const [reason, setReason] = useState("");
   const [message, setMessage] = useState({ value: "", valid: null });
 
   const validarMensaje = (mensaje) => {
     return mensaje.length >= 5 && mensaje.length <= 500 ? true : false;
   };
+
   return (
     <Box
       component="form"
@@ -75,7 +76,7 @@ const Step2 = ({ updateStep, formData, setFormData, handelSubmit }) => {
         sx={{ fontSize: "4rem !important" }}
       />
       {message.valid ? (
-        <Button variant="contained" type="submit" onClick={handelSubmit}>
+        <Button variant="contained" type="submit" onClick={handleSubmit}>
           Finalizar
         </Button>
       ) : (
