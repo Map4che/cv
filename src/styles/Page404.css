@@ -163,3 +163,9 @@
   margin-top: 2px;
   text-transform: uppercase;
 }
+
+.p-error_info {
+  color: rgb(255, 33, 33);
+  margin-top: 2rem;
+  font-size: 2rem;
+}

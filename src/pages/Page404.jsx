@@ -24,10 +24,10 @@ export function Page404() {
         <div className="shadow"></div>
       </div>
       <div className="bottom">
-        <p className="p-error">Lo sentimos esta pagina no existe!</p>
-        <p className="p-error">
-          Esta pagina lanza el error 404 intencionalmente para mostrar el manejo
-          de errores
+        <p className="p-error">¡Lo sentimos esta pagina no existe!</p>
+        <p className="p-error p-error_info">
+          Este enlace muestra el error 404 intencionalmente para mostrar el
+          manejo del status 404 NOT FOUND
         </p>
       </div>
     </>
